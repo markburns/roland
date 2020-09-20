@@ -22,6 +22,13 @@ Codacy|[![Codacy Badge](https://api.codacy.com/project/badge/Grade/19a42389d36f4
 
 ### General
 You will need cmake and git installed.
+
+#### prerequisites
+
+```
+cmake git build-essential libsdl1.2-dev libsdl-image1.2-dev
+```
+
 ```bash
 git clone https://github.com/raldus/roland.git
 cd roland
@@ -33,6 +40,7 @@ Folowing an example of an unix release build:
 cmake -H. -Bbuild -G"Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 ```
+
 If you plan to build an RPM package or to install with make,"-DCMAKE_BUILD_TYPE=" **must be** "Release".
 If you plan to build an run from source directory,"-DCMAKE_BUILD_TYPE=" **must be** "Debug".
 
